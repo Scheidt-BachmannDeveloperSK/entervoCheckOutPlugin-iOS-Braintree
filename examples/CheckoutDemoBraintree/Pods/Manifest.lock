@@ -1,0 +1,55 @@
+PODS:
+  - Braintree (4.11.0):
+    - Braintree/Card (= 4.11.0)
+    - Braintree/Core (= 4.11.0)
+    - Braintree/PayPal (= 4.11.0)
+    - Braintree/UI (= 4.11.0)
+  - Braintree/Card (4.11.0):
+    - Braintree/Core
+  - Braintree/Core (4.11.0)
+  - Braintree/PaymentFlow (4.11.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/PayPal (4.11.0):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.11.0):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.11.0):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.11.0)
+  - Braintree/UI (4.11.0):
+    - Braintree/Card
+    - Braintree/Core
+  - Braintree/UnionPay (4.11.0):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (6.1.0):
+    - BraintreeDropIn/DropIn (= 6.1.0)
+  - BraintreeDropIn/DropIn (6.1.0):
+    - Braintree/Card (~> 4.11)
+    - Braintree/Core (~> 4.11)
+    - Braintree/PaymentFlow (~> 4.11)
+    - Braintree/UnionPay (~> 4.11)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (6.1.0)
+  - entervoCheckoutPluginBraintree (1.0.1):
+    - Braintree
+    - BraintreeDropIn
+
+DEPENDENCIES:
+  - Braintree
+  - BraintreeDropIn
+  - entervoCheckoutPluginBraintree
+
+SPEC CHECKSUMS:
+  Braintree: f52744f38d1f5f37f8719f7acee4e1d7a3acb758
+  BraintreeDropIn: 2e8bba4facf6cc925176637030454d8308223b95
+  entervoCheckoutPluginBraintree: 5281b565955a2a26f36861fe0eb320e631f18774
+
+PODFILE CHECKSUM: cb80a1d9d1ed893fdcf35785d5e9e2daf569564d
+
+COCOAPODS: 1.4.0

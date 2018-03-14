@@ -1,0 +1,11 @@
+framework module entervoCheckoutPluginBraintree {
+  umbrella header "entervoCheckoutPluginBraintree.h"
+
+  export *
+  module * { export * }
+}
+
+module entervoCheckoutPluginBraintree.Swift {
+    header "entervoCheckoutPluginBraintree-Swift.h"
+    requires objc
+}

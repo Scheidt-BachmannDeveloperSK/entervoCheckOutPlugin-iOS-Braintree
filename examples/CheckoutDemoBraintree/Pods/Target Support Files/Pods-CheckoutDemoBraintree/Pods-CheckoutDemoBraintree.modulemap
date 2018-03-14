@@ -1,0 +1,6 @@
+framework module Pods_CheckoutDemoBraintree {
+  umbrella header "Pods-CheckoutDemoBraintree-umbrella.h"
+
+  export *
+  module * { export * }
+}
