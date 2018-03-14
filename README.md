@@ -7,8 +7,7 @@
 ## Sample Projects
 This documentation provides a complete step-by-step tuturial on how to create your first application with the <i>entervoCheckoutPlugin</i> embedded. If you can't wait to kickstart however, you can also download one a (simple) sample project right here and get started this way.
   
-* download the <a href="https://github.com/Scheidt-BachmannDeveloperSK/entervoCheckoutPlugin-iOS/tree/v1.0.4BT/examples/CheckoutDemo3rdParty">Sample Project using a 3rd Party PSP (handled by you)</a>  
-* download the <a href="https://github.com/Scheidt-BachmannDeveloperSK/entervoCheckoutPlugin-iOS/tree/master/examples/CheckoutDemoBraintree">Sample Project using a Braintree as the PSP</a>  
+* download the <a href="https://github.com/Scheidt-BachmannDeveloperSK/entervoCheckoutPlugin-iOS-3rdParty/tree/v1.0.5BT/examples/CheckoutDem    oBraintree">Sample Project using a Braintree as the PSP</a>  
 
  
 <hr />
