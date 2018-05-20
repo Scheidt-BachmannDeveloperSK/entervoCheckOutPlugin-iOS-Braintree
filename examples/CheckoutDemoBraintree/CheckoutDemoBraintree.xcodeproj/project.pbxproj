@@ -103,7 +103,6 @@
 				C4F7A1E9204D0D7600FB602E /* Frameworks */,
 				C4F7A1EA204D0D7600FB602E /* Resources */,
 				C9A2886D5E38B8787F1D7300 /* [CP] Embed Pods Frameworks */,
-				A8DF6A8D0FF243BBE1E5E311 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,21 +162,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A8DF6A8D0FF243BBE1E5E311 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutDemoBraintree/Pods-CheckoutDemoBraintree-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C9A2886D5E38B8787F1D7300 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
