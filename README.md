@@ -399,7 +399,8 @@ Next, you will have to make some changes to the <i>info.plist</i> file of your a
 <tr><td width="20%">URL types</td><td>add this (array type) key and add one item (it will be automatically named 'Item 0') with the following children in this dictionary</td></tr>
 <tr><td></td><td>Document Role => <span class="highlight-dark-color">Editor</span></td></tr>
 <tr><td></td><td>Document Icon File Name => <span class="darker-dark-color">(empty)</span></tr>
-<tr><td></td><td>URL identifier => <span class="highlight-dark-color">com.yourcompany.yourapp.payments</span></td></tr>
+<tr><td></td><td>URL identifier => <span class="highlight-dark-color">com.yourcompany.yourapp</span></td></tr>
+<tr><td></td><td>URL Schemes =>  add one item (Item 0) with a value of <span class="highlight-dark-color">com.yourcompany.yourapp.payment</span></td></tr>
 </table>
  
 Please pay particular attention to the <i>URL identifier</i> key you just added. Its value must be the bundle identifier of your application with the component <span class="highlight-dark-color">.payments</span> appended to it. This is required for <i>Braintree</i> to be able to redirect back into your app once the payment is complete.
