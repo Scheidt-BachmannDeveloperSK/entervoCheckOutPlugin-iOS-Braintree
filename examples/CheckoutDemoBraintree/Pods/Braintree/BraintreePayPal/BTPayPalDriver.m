@@ -259,6 +259,10 @@ typedef NS_ENUM(NSUInteger, BTPayPalPaymentType) {
         if (request.localeCode != nil) {
             experienceProfile[@"locale_code"] = request.localeCode;
         }
+
+        if (request.merchantAccountId != nil) {
+            parameters[@"merchant_account_id"] = request.merchantAccountId;
+        }
         
         // Currency code should only be used for Hermes Checkout (one-time payment).
         // For BA, currency should not be used.
@@ -268,15 +272,27 @@ typedef NS_ENUM(NSUInteger, BTPayPalPaymentType) {
         }
         
         if (request.shippingAddressOverride != nil) {
-            experienceProfile[@"address_override"] = @YES;
+            experienceProfile[@"address_override"] = @(!request.isShippingAddressEditable);
             BTPostalAddress *shippingAddress = request.shippingAddressOverride;
-            parameters[@"line1"] = shippingAddress.streetAddress;
-            parameters[@"line2"] = shippingAddress.extendedAddress;
-            parameters[@"city"] = shippingAddress.locality;
-            parameters[@"state"] = shippingAddress.region;
-            parameters[@"postal_code"] = shippingAddress.postalCode;
-            parameters[@"country_code"] = shippingAddress.countryCodeAlpha2;
-            parameters[@"recipient_name"] = shippingAddress.recipientName;
+            if (isBillingAgreement) {
+                NSMutableDictionary *shippingAddressParams = [NSMutableDictionary dictionary];
+                shippingAddressParams[@"line1"] = shippingAddress.streetAddress;
+                shippingAddressParams[@"line2"] = shippingAddress.extendedAddress;
+                shippingAddressParams[@"city"] = shippingAddress.locality;
+                shippingAddressParams[@"state"] = shippingAddress.region;
+                shippingAddressParams[@"postal_code"] = shippingAddress.postalCode;
+                shippingAddressParams[@"country_code"] = shippingAddress.countryCodeAlpha2;
+                shippingAddressParams[@"recipient_name"] = shippingAddress.recipientName;
+                parameters[@"shipping_address"] = shippingAddressParams;
+            } else {
+                parameters[@"line1"] = shippingAddress.streetAddress;
+                parameters[@"line2"] = shippingAddress.extendedAddress;
+                parameters[@"city"] = shippingAddress.locality;
+                parameters[@"state"] = shippingAddress.region;
+                parameters[@"postal_code"] = shippingAddress.postalCode;
+                parameters[@"country_code"] = shippingAddress.countryCodeAlpha2;
+                parameters[@"recipient_name"] = shippingAddress.recipientName;
+            }
         } else {
             experienceProfile[@"address_override"] = @NO;
         }
@@ -455,6 +471,10 @@ typedef NS_ENUM(NSUInteger, BTPayPalPaymentType) {
                     }
                     if (self.clientMetadataId) {
                         parameters[@"paypal_account"][@"correlation_id"] = self.clientMetadataId;
+                    }
+
+                    if (self.payPalRequest != nil && self.payPalRequest.merchantAccountId != nil) {
+                        parameters[@"merchant_account_id"] = self.payPalRequest.merchantAccountId;
                     }
                     
                     BTClientMetadata *metadata = [self clientMetadata];

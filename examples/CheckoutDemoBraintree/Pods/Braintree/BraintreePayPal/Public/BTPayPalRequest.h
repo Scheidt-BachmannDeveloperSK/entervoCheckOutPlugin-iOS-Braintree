@@ -85,6 +85,13 @@ typedef NS_ENUM(NSInteger, BTPayPalRequestUserAction) {
 @property (nonatomic, getter=isShippingAddressRequired) BOOL shippingAddressRequired;
 
 /**
+ Defaults to false. Set to true to enable user editing of the shipping address.
+
+ @note Only applies when `shippingAddressOverride` is set.
+ */
+@property (nonatomic, getter=isShippingAddressEditable) BOOL shippingAddressEditable;
+
+/**
  Optional: A valid ISO currency code to use for the transaction. Defaults to merchant currency code if not set.
  @note This is only used for one-time payments.
 */
@@ -161,6 +168,11 @@ typedef NS_ENUM(NSInteger, BTPayPalRequestUserAction) {
  Optional: Offers PayPal Credit if the customer qualifies. Defaults to false. Only available with PayPal Checkout and PayPal Billing Agreement.
  */
 @property (nonatomic) BOOL offerCredit;
+
+/**
+ Optional: A non-default merchant account to use for tokenization.
+*/
+@property (nonatomic, nullable, copy) NSString *merchantAccountId;
 
 @end
 
