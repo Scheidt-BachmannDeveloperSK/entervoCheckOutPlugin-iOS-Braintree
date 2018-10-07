@@ -573,6 +573,7 @@ plugin.reloadConfiguration()
 * (1.0.15) - improved timeout settings
 * (1.0.15) - improved configuration retrieval
 * (1.0.16) - enhanced customization options
+* (1.0.17) - minor fix (version info)
 
 
  &copy; 2018 Scheidt &amp; Bachmann GmbH 
