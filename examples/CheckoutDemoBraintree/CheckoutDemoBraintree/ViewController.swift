@@ -52,6 +52,8 @@ class ViewController: UIViewController, SBCheckOutDelegate {
         super.viewDidLoad()
         plugin.setDelegate(self);               // this viewcontroller is the delegate for the plugin
         plugin.setLogLevel(level: .TRACE)
+        let ver = plugin.version()
+        NSLog( "Loaded entervoCheckoutPlugin version \(ver)")
     }
     
     override func didReceiveMemoryWarning() {

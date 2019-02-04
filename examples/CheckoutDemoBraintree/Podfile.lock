@@ -1,43 +1,44 @@
 PODS:
-  - Braintree (4.18.0):
-    - Braintree/Card (= 4.18.0)
-    - Braintree/Core (= 4.18.0)
-    - Braintree/PayPal (= 4.18.0)
-    - Braintree/UI (= 4.18.0)
-  - Braintree/Card (4.18.0):
+  - Braintree (4.22.0):
+    - Braintree/Card (= 4.22.0)
+    - Braintree/Core (= 4.22.0)
+    - Braintree/PayPal (= 4.22.0)
+    - Braintree/UI (= 4.22.0)
+  - Braintree/Card (4.22.0):
     - Braintree/Core
-  - Braintree/Core (4.18.0)
-  - Braintree/PaymentFlow (4.18.0):
+  - Braintree/Core (4.22.0)
+  - Braintree/PaymentFlow (4.22.0):
     - Braintree/Card
     - Braintree/Core
     - Braintree/PayPalOneTouch
-  - Braintree/PayPal (4.18.0):
+  - Braintree/PayPal (4.22.0):
     - Braintree/Core
     - Braintree/PayPalOneTouch
-  - Braintree/PayPalDataCollector (4.18.0):
+  - Braintree/PayPalDataCollector (4.22.0):
     - Braintree/Core
     - Braintree/PayPalUtils
-  - Braintree/PayPalOneTouch (4.18.0):
+  - Braintree/PayPalOneTouch (4.22.0):
     - Braintree/Core
     - Braintree/PayPalDataCollector
     - Braintree/PayPalUtils
-  - Braintree/PayPalUtils (4.18.0)
-  - Braintree/UI (4.18.0):
+  - Braintree/PayPalUtils (4.22.0)
+  - Braintree/UI (4.22.0):
     - Braintree/Card
     - Braintree/Core
-  - Braintree/UnionPay (4.18.0):
+  - Braintree/UnionPay (4.22.0):
     - Braintree/Card
     - Braintree/Core
-  - BraintreeDropIn (6.4.1):
-    - BraintreeDropIn/DropIn (= 6.4.1)
-  - BraintreeDropIn/DropIn (6.4.1):
+  - BraintreeDropIn (7.0.0):
+    - BraintreeDropIn/DropIn (= 7.0.0)
+  - BraintreeDropIn/DropIn (7.0.0):
     - Braintree/Card (~> 4.17)
     - Braintree/Core (~> 4.17)
     - Braintree/PaymentFlow (~> 4.17)
+    - Braintree/PayPal (~> 4.17)
     - Braintree/UnionPay (~> 4.17)
     - BraintreeDropIn/UIKit
-  - BraintreeDropIn/UIKit (6.4.1)
-  - entervoCheckoutPluginBraintree (1.0.14):
+  - BraintreeDropIn/UIKit (7.0.0)
+  - entervoCheckoutPluginBraintree (1.0.24):
     - Braintree
     - BraintreeDropIn
 
@@ -53,10 +54,10 @@ SPEC REPOS:
     - entervoCheckoutPluginBraintree
 
 SPEC CHECKSUMS:
-  Braintree: d98aff347e3496b627dc47d0e6f927cf50d1c40c
-  BraintreeDropIn: a098771978a60a6fa56837bbfa4754970ecc582a
-  entervoCheckoutPluginBraintree: 7f795d418da06207a8a48d13286eabf6afb579eb
+  Braintree: e814ec196208d3e961c488cf4071de043f399cf9
+  BraintreeDropIn: 7eb460717213ae39a3b457c90671f9975747dcab
+  entervoCheckoutPluginBraintree: 5d9bd7d265cd7bb2bc5baa99a3d933822dcd043f
 
 PODFILE CHECKSUM: cb80a1d9d1ed893fdcf35785d5e9e2daf569564d
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

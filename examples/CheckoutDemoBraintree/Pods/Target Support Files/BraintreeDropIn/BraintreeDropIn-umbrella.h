@@ -22,6 +22,7 @@
 #import "BTUIKAppearance.h"
 #import "BTUIKCardExpirationValidator.h"
 #import "BTUIKCardExpiryFormat.h"
+#import "BTUIKCardholderNameFormField.h"
 #import "BTUIKCardListLabel.h"
 #import "BTUIKCardNumberFormField.h"
 #import "BTUIKCardType.h"
