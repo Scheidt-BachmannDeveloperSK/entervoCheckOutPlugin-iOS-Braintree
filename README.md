@@ -519,7 +519,8 @@ The above code snippet will set the plugin UI language to <i>German</i>, no matt
 
 > Note: the embedded <i>Braintree UI</i> (drop-in) comes with its own set of localized resources which will also automatically kick in.
 
-## Specialties
+## Specialt
+* (1.0.22) - fix rounding issueies
 
 The configuration details associated with your S&amp;B-provided api key are stored in a backend system and retrieved when necessary. A (temporarily valid) copy of it is stored locally on the mobile device. Normally, this is handled completely transparently by the plugin, and there is nothing you have to do. If you however know of changes that have been made to the configuration that you need to become effective immediately, you have the option to enforce a configuration reload. This can be done using the <i>reloadConfiguration</i> method of the plugin:
 
@@ -530,16 +531,21 @@ plugin.reloadConfiguration()
 
 ## Change Log
 
-
 * (version) - description
-* (1.0.26) - update on <i>SBCheckoutTransaction</i> struct
-* (1.0.26) - enhanced elaboration on CSS styling capabilities
-* (1.0.26) - enhanced sample application
+* (1.0.13) - update on <i>SBCheckoutTransaction</i> struct
+* (1.0.13) - enhanced elaboration on CSS styling capabilities
+* (1.0.14) - enhanced sample application
 * (1.0.15) - add Serbian translation
 * (1.0.15) - improved timeout settings
-* (1.0.15) - improved configuration retrieval
-* (1.0.16) - enhanced customization options
+* (1.0.15) - improved configuration retrieval (auto-reload, forced reload)
+* (1.0.16) - enhanced customization options (header image, backgrounds)
+* (1.0.16) - adjust Serbian translation
 * (1.0.17) - minor fix (version info)
-
+* (1.0.18) - improve backend response handling
+* (1.0.21) - style sheet adjustments
+* (1.0.22) - fix rounding issue
+* (1.0.23) - last XCode 9 / Swift 3.2 version
+* (1.0.24) - first XCode 9 / Swift 4.2 version
+* (1.0.25) - update documentation
 
  &copy; 2018, 2019 Scheidt &amp; Bachmann GmbH
