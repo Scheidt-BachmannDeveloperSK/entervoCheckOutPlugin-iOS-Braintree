@@ -10,7 +10,8 @@ This documentation provides a complete step-by-step tuturial on how to create yo
 * download the <a href="https://github.com/Scheidt-BachmannDeveloperSK/entervoCheckoutPlugin-iOS-3rdParty/tree/v1.0.25BT/examples/CheckoutDemoBraintree">Sample Project using Braintree as the PSP</a>  
 
 
-<hr />
+<hr>
+
 ## Development Environment Pre-Requisites
 
 ### Supported XCode Versions, Swift Language level
