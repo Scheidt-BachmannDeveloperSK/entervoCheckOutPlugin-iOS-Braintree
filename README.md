@@ -12,6 +12,7 @@ This documentation provides a complete step-by-step tuturial on how to create yo
 
 <hr />
 ## Development Environment Pre-Requisites
+
 ### Supported XCode Versions, Swift Language level
 Up until version <i>1.0.23</i>, the plugin supported the use of Apple <b>XCode version 9.x</b> and Swift with a language level of <b>3.2</b>. With version <i>1.0.24</i>, this has been upgraded to <b>XCode version 10.x</b> and Swift language level <b>4.2</b>. By default, the CocoaPods dependency manager (see next paragraph) will pull the most recent version of the plugin. If for some reason you still need to remain in an XCode 9 environment, you will have to specifically pull version <i>1.0.23</i> of the plugin.
 
