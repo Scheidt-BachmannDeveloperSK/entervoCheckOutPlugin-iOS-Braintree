@@ -527,7 +527,7 @@ The configuration details associated with your S&amp;B-provided api key are stor
 ```swift
 plugin.reloadConfiguration()
 ```
-``
+
 
 ## Change Log
 
