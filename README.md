@@ -519,15 +519,13 @@ The above code snippet will set the plugin UI language to <i>German</i>, no matt
 
 > Note: the embedded <i>Braintree UI</i> (drop-in) comes with its own set of localized resources which will also automatically kick in.
 
-## Specialt
-* (1.0.22) - fix rounding issueies
+## Specialties
 
 The configuration details associated with your S&amp;B-provided api key are stored in a backend system and retrieved when necessary. A (temporarily valid) copy of it is stored locally on the mobile device. Normally, this is handled completely transparently by the plugin, and there is nothing you have to do. If you however know of changes that have been made to the configuration that you need to become effective immediately, you have the option to enforce a configuration reload. This can be done using the <i>reloadConfiguration</i> method of the plugin:
 
 ```swift
 plugin.reloadConfiguration()
 ```
-
 
 ## Change Log
 
