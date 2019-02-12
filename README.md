@@ -517,6 +517,13 @@ plugin.setLanguage( "de")
 
 The above code snippet will set the plugin UI language to <i>German</i>, no matter what the settings on the device look like. If there is currently no localization available for the language specified, the plugin will revert back to the default language and raise a corresponding error notifying the host app about this.
 
+For date formatting purposes, the plugin is by default using the regional settings on the device. If required, this can be overridden by specifying a different region. The method for this use-case is called <i>setRegion</i>.
+
+```swift
+plugin.setRegion( "GB")
+```
+The above line of code will make the plugin display date information using British regional principles. It has no impact on the separate language settings. 
+
 > Note: the embedded <i>Braintree UI</i> (drop-in) comes with its own set of localized resources which will also automatically kick in.
 
 ## Specialties
