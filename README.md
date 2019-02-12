@@ -552,5 +552,6 @@ plugin.reloadConfiguration()
 * (1.0.23) - last XCode 9 / Swift 3.2 version
 * (1.0.24) - first XCode 10 / Swift 4.2 version
 * (1.0.25) - update documentation
+* (1.0.26) - update documentation (setRegion method)
 
  &copy; 2018, 2019 Scheidt &amp; Bachmann GmbH
