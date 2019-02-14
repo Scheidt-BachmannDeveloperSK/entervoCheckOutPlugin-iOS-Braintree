@@ -555,4 +555,3 @@ plugin.reloadConfiguration()
 * (1.0.26) - update documentation (setRegion method)
 
  &copy; 2017, 2018, 2019 Scheidt &amp; Bachmann GmbH
-
