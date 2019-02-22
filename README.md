@@ -133,19 +133,44 @@ The <i>SBCheckOutDelegate</i> protocol requires you to implement three methods v
 
 ```swift
 // delegate functions to conform to the SBCheckOutDelegate protocol
-func onError( message: String) -> Void
+func onError( code: SBCheckOut.ErrorCode, message: String) -> Void
 func onMessage( level: SBCheckOut.LogLevel, message: String) -> Void
 func onStatus( newStatus: SBCheckOut.Status, info: Any?) -> Void
 ```
 
 The use of the three methods is basically self-explanatory, but we'll quickly go over them.
 
-### <b>onError( message: String)</b>
+### <b>onError( code: SBCheckOut.ErrorCode, message: String)</b>
 This function is used as a call-back to let your application know that something didn't work. Under normal conditions, the plugin is trying to handle all upcoming issues itself and not bother the hosting application. There are however a few situations where the plugin will have to let you know that an action failed. The most popular examples for this are
 
 * the hosting application (i.e. your app) is trying to start a checkout flow without a proper prior initialization of the plugin
 * the hosting application is trying to start a checkout flow while the previously started flow hasn't been completed yet
 * the hosting application has requested to cancel the current flow, but this is not possible due to the current state of the plugin flow
+i
+The <i>code</i> parameter is an error code defined in an enum:
+
+```swift
+
+public extension SBCheckOut {
+    
+    public enum ErrorCode : Int {
+        
+        case
+        UNKNOWN_ERROR = 10000,
+        MEDIUM_NOT_FOUND = 10001,
+        BARCODE_NOT_FOUND = 10002,
+        LPN_NOT_FOUND = 10003,
+        MOBILE_ID_NOT_FOUND = 10004,
+        NETWORK_NOT_AVAILABLE = 10005,
+        BACKEND_NOT_AVAILABLE = 10006,
+        CARPARK_NOT_AVAILABLE = 10007,
+        TRANSACTION_CANCELLED = 10008,
+        TRANSACTION_DECLINED = 10009,
+        BRAINTREE_INTERNAL = 10010
+    }
+}
+
+```
 
 The <i>message</i> parameter provides some explanatory text about the error condition.
 
@@ -553,5 +578,6 @@ plugin.reloadConfiguration()
 * (1.0.24) - first XCode 10 / Swift 4.2 version
 * (1.0.25) - update documentation
 * (1.0.26) - update documentation (setRegion method)
+* (1.0.27) - more fine-grained error differenciation for better error messages
 
  &copy; 2017, 2018, 2019 Scheidt &amp; Bachmann GmbH
