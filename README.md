@@ -580,5 +580,6 @@ plugin.reloadConfiguration()
 * (1.0.25) - update documentation
 * (1.0.26) - update documentation (setRegion method)
 * (1.0.27) - more fine-grained error differenciation for better error messages
+* (1.0.28) - add error code to onError() method
 
  &copy; 2017, 2018, 2019 Scheidt &amp; Bachmann GmbH
