@@ -146,7 +146,8 @@ This function is used as a call-back to let your application know that something
 * the hosting application (i.e. your app) is trying to start a checkout flow without a proper prior initialization of the plugin
 * the hosting application is trying to start a checkout flow while the previously started flow hasn't been completed yet
 * the hosting application has requested to cancel the current flow, but this is not possible due to the current state of the plugin flow
-i
+
+
 The <i>code</i> parameter is an error code defined in an enum:
 
 ```swift
