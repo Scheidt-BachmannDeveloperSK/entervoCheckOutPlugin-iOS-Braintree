@@ -21,8 +21,8 @@ class ViewController: UIViewController, SBCheckOutDelegate {
         NSLog( "onMessage( message: \(message))")
     }
     
-    func onError(message: String) {
-        NSLog( "onError( message: \(message))")
+    func onError(code: SBCheckOut.ErrorCode, message: String) {
+        NSLog( "onError( code: \(code), message: \(message))")
     }
     
     func onStatus(newStatus: SBCheckOut.Status, info: Any?) {
@@ -42,7 +42,7 @@ class ViewController: UIViewController, SBCheckOutDelegate {
     
     @IBAction func startButtonClicked() {
         plugin.setRect(pluginView!.frame)
-        plugin.start( identification: /*"360108376744330999"*//*"120921356966778255"*/"434127816644330811", type: .BARCODE)
+        plugin.start( identification: "434127816644330811", type: .BARCODE)
     }
     
     override func viewDidAppear(_ animated: Bool) {

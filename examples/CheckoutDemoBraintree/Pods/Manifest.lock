@@ -38,7 +38,7 @@ PODS:
     - Braintree/UnionPay (~> 4.17)
     - BraintreeDropIn/UIKit
   - BraintreeDropIn/UIKit (7.0.0)
-  - entervoCheckoutPluginBraintree (1.0.24):
+  - entervoCheckoutPluginBraintree (1.0.27):
     - Braintree
     - BraintreeDropIn
 
@@ -56,7 +56,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Braintree: e814ec196208d3e961c488cf4071de043f399cf9
   BraintreeDropIn: 7eb460717213ae39a3b457c90671f9975747dcab
-  entervoCheckoutPluginBraintree: 5d9bd7d265cd7bb2bc5baa99a3d933822dcd043f
+  entervoCheckoutPluginBraintree: 23de719d3a8040f9d17934f598bbcea2b91ba27e
 
 PODFILE CHECKSUM: cb80a1d9d1ed893fdcf35785d5e9e2daf569564d
 

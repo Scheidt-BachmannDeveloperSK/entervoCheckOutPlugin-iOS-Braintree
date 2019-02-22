@@ -10,7 +10,7 @@ import UIKit
 import Braintree
 import entervoCheckoutPluginBraintree
 
-let plugin = SBCheckOut(apikey: "df9fd246-c1e8-4c6d-956d-077ad1a7912f", environment: .SANDBOX)
+let plugin = SBCheckOut(apikey: "51885707-b4a3-424c-92a8-a03dcbf7f484", environment: .SANDBOX)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

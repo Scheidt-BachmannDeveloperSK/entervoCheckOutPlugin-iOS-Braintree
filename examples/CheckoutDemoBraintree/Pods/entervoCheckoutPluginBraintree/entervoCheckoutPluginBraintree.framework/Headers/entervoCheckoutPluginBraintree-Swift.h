@@ -194,6 +194,8 @@ SWIFT_CLASS("_TtC30entervoCheckoutPluginBraintree10SBCheckOut")
 
 
 
+
+
 @class UIWebView;
 
 @interface SBCheckOut (SWIFT_EXTENSION(entervoCheckoutPluginBraintree))
