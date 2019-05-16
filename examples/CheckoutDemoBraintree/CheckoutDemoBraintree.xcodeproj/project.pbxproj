@@ -168,7 +168,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutDemoBraintree/Pods-CheckoutDemoBraintree-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CheckoutDemoBraintree/Pods-CheckoutDemoBraintree-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
 				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
 				"${PODS_ROOT}/entervoCheckoutPluginBraintree/entervoCheckoutPluginBraintree.framework",
@@ -181,7 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckoutDemoBraintree/Pods-CheckoutDemoBraintree-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckoutDemoBraintree/Pods-CheckoutDemoBraintree-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1B7C28B0BC28097A7607F95 /* [CP] Check Pods Manifest.lock */ = {

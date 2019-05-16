@@ -25,6 +25,6 @@
     "BARCODE_NOT_FOUND"                     : "Barcode nije pronađen",
     "LPN_NOT_FOUND"                         : "Registarski broj nije pronađen",
     "MOBILE_ID_NOT_FOUND"                   : "Mobile ID nije pronađen",
-    "TRANSACTION_DECLINED_3RD_PARTY"        : "Plaćanje neuspešno, molim pokušajte kasnije"
+    "TRANSACTION_DECLINED"                  : "Plaćanje neuspešno, molim pokušajte kasnije"
     
 }

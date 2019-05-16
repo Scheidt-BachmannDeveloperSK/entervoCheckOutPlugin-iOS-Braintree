@@ -13,6 +13,8 @@ import BraintreeDropIn
 
 class ViewController: UIViewController, SBCheckOutDelegate {
     
+    var hadError = false
+    
     @IBOutlet var pluginView: UIView?
     func onConductPayment(sessionToken: String) {
     }
@@ -23,6 +25,7 @@ class ViewController: UIViewController, SBCheckOutDelegate {
     
     func onError(code: SBCheckOut.ErrorCode, message: String) {
         NSLog( "onError( code: \(code), message: \(message))")
+        hadError = true
     }
     
     func onStatus(newStatus: SBCheckOut.Status, info: Any?) {
@@ -35,13 +38,16 @@ class ViewController: UIViewController, SBCheckOutDelegate {
         if ( newStatus == .FLOW_FINISHED) {
             if let res = info {
                 NSLog( "\(res)")
-                showReceipt(data: info)
+                if ( shouldPresentReceipt(data: res)) {
+                    showReceipt(data: info)
+                }
             }
         }
     }
     
     @IBAction func startButtonClicked() {
         plugin.setRect(pluginView!.frame)
+        hadError = false
         plugin.start( identification: "434127816644330811", type: .BARCODE)
     }
     
@@ -83,7 +89,27 @@ class ViewController: UIViewController, SBCheckOutDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+ 
+    func shouldPresentReceipt( data: Any?) -> Bool {
+        
+        if ( self.hadError) {
+            // an error occurred, so do not try to display a receipt
+            return false
+        }
+        
+        if let transaction = data as? SBCheckOutTransaction {
+            
+            if (    transaction.success &&
+                    !transaction.braintree_transaction_id.isEmpty &&
+                    !transaction.unique_pay_id.isEmpty) {
+                // we have a successful and complete transaction confirmation, so show a receipt
+                return true
+            }
+        }
+        
+        // we do not have a successful and complete transaction confirmation, so do not present a receipt
+        return false
+    }
     
 }
 

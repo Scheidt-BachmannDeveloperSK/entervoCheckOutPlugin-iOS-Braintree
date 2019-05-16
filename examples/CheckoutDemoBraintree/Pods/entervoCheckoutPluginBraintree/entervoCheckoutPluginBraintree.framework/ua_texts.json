@@ -25,6 +25,6 @@
     "BARCODE_NOT_FOUND"                     : "Штрих-код не найден",
     "LPN_NOT_FOUND"                         : "Гос. номер не найден",
     "MOBILE_ID_NOT_FOUND"                   : "Мобильный ID не найден",
-    "TRANSACTION_DECLINED_3RD_PARTY"        : "Ошибка оплаты. Повторите оплату позже"
+    "TRANSACTION_DECLINED"                  : "Ошибка оплаты. Повторите оплату позже"
 
 }

@@ -25,5 +25,5 @@
     "BARCODE_NOT_FOUND"                     : "Barcode not found",
     "LPN_NOT_FOUND"                         : "License Plate not found",
     "MOBILE_ID_NOT_FOUND"                   : "Mobile ID not found",
-    "TRANSACTION_DECLINED_3RD_PARTY"        : "Payment failed. Please try again later."
+    "TRANSACTION_DECLINED"                  : "Payment failed. Please try again later."
 }
