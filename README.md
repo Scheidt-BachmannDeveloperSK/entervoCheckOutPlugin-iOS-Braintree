@@ -1,3 +1,4 @@
+<h1 style="color:red">LEGACY VERSION FOR XCODE 10.1, SWIFT 3, TARGET IOS 10</h1>
 # Scheidt & Bachmann entervoCheckoutPluginBraintree
 
 <img src="https://img.shields.io/cocoapods/v/entervoCheckoutPluginBraintree.svg?style=flat" />
