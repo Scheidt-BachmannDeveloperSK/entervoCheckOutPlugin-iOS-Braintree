@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# update to latest plugin version&#10;./pre_build.sh&#10;">
+               scriptText = "&#10;">
             </ActionContent>
          </ExecutionAction>
       </PreActions>
